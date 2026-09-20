@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
-    background-color: #ffe5e7da;
+    background-color: #f5eff8;
     font-family: "Roboto Mono", monospace;
     margin: 0;
     padding: 0;
@@ -62,7 +62,7 @@ h1,h2,h3 {
     gap: 0.5rem;
 }
 header {
-    background-color: #d8c4e8;
+    background-color: #f2dffa;
     padding: 20px 60px;
     position: fixed;
     top: 0;
@@ -75,10 +75,8 @@ nav ul {
     display: flex;
     align-items: center;
     gap: 35px;
-
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 
@@ -87,7 +85,7 @@ nav li:first-child {
 }
 
 nav a {
-    color: #242338;
+    color: #c92f89;
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -116,6 +114,7 @@ section {
     margin: 0 auto;
 }
 
+
 .experiencia-titulo h2 {
     font-size: clamp(2rem, 3vw, 3rem);
     margin-bottom: 3rem;
@@ -131,7 +130,7 @@ section {
     grid-template-columns: 10rem 1fr;
     gap: 2rem;
     padding: 2rem 0;
-    border-bottom: 1px solid #d8b8d8;
+    border-bottom: 1px solid #900090;
 }
 
 .experiencia-data {
@@ -176,8 +175,7 @@ section {
 
 .projetos-item {
     padding: 2rem;
-
-    border: 1px solid #d8b8d8;
+    border: 2px solid #750075;
     border-radius: 0.8rem;
     transition: transform 0.2s ease,
                 box-shadow 0.2s ease;
@@ -185,7 +183,6 @@ section {
 
 .link-projeto {
     display: inline-block;
-
     color: #6d28a8;
     font-weight: 600;
     text-decoration: none;
@@ -232,12 +229,10 @@ section {
 }
 
 footer {
-    background-color: #d8c4e8;
-
+    background-color: #f2dffa;
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 1.5rem;
 }
 
@@ -246,4 +241,9 @@ footer p {
     font-size: 0.85rem;
     margin: 0;
     letter-spacing: -0.03em;
+}
+
+.sobre-titulo h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-bottom: 3rem;
 }
