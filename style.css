@@ -1,7 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    text-align: center;
-    padding-top: 50px;
+    background-color: #f5eff8;
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: #725b78;
+    letter-spacing: -0.5px;
+    line-height: 1.6;
+}
+
+h1,h2,h3 {
+    color: #6d28a8;
+}
+
+#home h1 {
+    font-size: clamp(1rem, 5vw, 4.5rem);
+    color: #6d28a8;
+    margin-bottom: 0;
+    letter-spacing: -0.05em;
+
+}
+
+#home p {
+    color: #5f466f;
+    font-size: larger;
+    font-weight: 300;
+    letter-spacing: -0.04em;
+    margin-top: 0;
+}
+
+#nome {
+    color: #c92f89;
+    font-size: 1.15em;
+    letter-spacing: -0.02em;
+}
+
+#sobre-mim a {
+    color: #c92f89;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#palmeiras {
+    color: #006437;
+    font-weight: bold;
+}
+
+#olivia {
+    color: #9b72cf;
+    font-weight: bold;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+header {
+    background-color: #f2dffa;
+    padding: 20px 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav a {
+    color: #c92f89;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #4b5894;
+}
+
+nav img {
+    width: 55px;
+    display: block;
+}
+
+section {
+    min-height: 100vh;
+    padding: 100px 8%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#experiencia {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+
+.experiencia-titulo h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-bottom: 3rem;
+}
+
+.experiencia-lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencia-item {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid #900090;
+}
+
+.experiencia-data {
+    color: #c92f89;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.experiencia-info h3 {
+    color: #6d28a8;
+    margin: 0 0 0.4rem 0;
+    font-size: 1.2rem;
+}
+
+.experiencia-info span {
+    color: #3f2948;
+    font-weight: 600;
+}
+
+.experiencia-info p {
+    color: #725b78;
+    margin-top: 0.8rem;
+    max-width: 45rem;
+    line-height: 1.6;
+}
+
+#projetos {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.projetos-titulo h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-bottom: 3rem;
+}
+
+.projetos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+}
+
+.projetos-item {
+    padding: 2rem;
+    border: 2px solid #750075;
+    border-radius: 0.8rem;
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.link-projeto {
+    display: inline-block;
+    color: #6d28a8;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #c92f89;
+    padding-bottom: 0.2rem;
+}
+
+.link-projeto:hover {
+    color: #c92f89;
+}
+
+#contato {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.contato-titulo h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-bottom: 3rem;
+}
+
+.contato-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 4rem;
+}
+
+.contato-item h3 {
+    color: #6d28a8;
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+}
+
+.contato-item a {
+    color: #c92f89;
+    text-decoration: none;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.contato-item a:hover {
+    border-color: #c92f89;
+}
+
+footer {
+    background-color: #f2dffa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+footer p {
+    color: #5f466f;
+    font-size: 0.85rem;
+    margin: 0;
+    letter-spacing: -0.03em;
+}
+
+.sobre-titulo h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-bottom: 3rem;
 }
