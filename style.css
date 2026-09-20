@@ -111,3 +111,49 @@ section {
     justify-content: center;
 }
 
+#experiencia {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.experiencia-titulo h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-bottom: 3rem;
+}
+
+.experiencia-lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.experiencia-item {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid #d8b8d8;
+}
+
+.experiencia-data {
+    color: #c92f89;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.experiencia-info h3 {
+    color: #6d28a8;
+    margin: 0 0 0.4rem 0;
+    font-size: 1.2rem;
+}
+
+.experiencia-info span {
+    color: #3f2948;
+    font-weight: 600;
+}
+
+.experiencia-info p {
+    color: #725b78;
+    margin-top: 0.8rem;
+    max-width: 45rem;
+    line-height: 1.6;
+}
