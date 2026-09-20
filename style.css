@@ -230,3 +230,20 @@ section {
 .contato-item a:hover {
     border-color: #c92f89;
 }
+
+footer {
+    background-color: #d8c4e8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.5rem;
+}
+
+footer p {
+    color: #5f466f;
+    font-size: 0.85rem;
+    margin: 0;
+    letter-spacing: -0.03em;
+}
