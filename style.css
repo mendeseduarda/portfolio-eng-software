@@ -157,3 +157,44 @@ section {
     max-width: 45rem;
     line-height: 1.6;
 }
+
+#projetos {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.projetos-titulo h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-bottom: 3rem;
+}
+
+.projetos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+}
+
+.projetos-item {
+    padding: 2rem;
+
+    border: 1px solid #d8b8d8;
+    border-radius: 0.8rem;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.link-projeto {
+    display: inline-block;
+
+    color: #6d28a8;
+    font-weight: 600;
+    text-decoration: none;
+
+    border-bottom: 2px solid #c92f89;
+    padding-bottom: 0.2rem;
+}
+
+.link-projeto:hover {
+    color: #c92f89;
+}
