@@ -7,6 +7,17 @@ body {
     padding: 0;
 }
 
+p {
+    color: #725b78;
+    letter-spacing: -0.5px;
+    line-height: 1.6;
+}
+
+h1,h2,h3 {
+    color: #6d28a8;
+}
+
+
 header {
     background-color: #d8c4e8;
     padding: 20px 60px;
@@ -46,4 +57,13 @@ nav a:hover {
 nav img {
     width: 55px;
     display: block;
+}
+
+section {
+    min-height: 100vh;
+    padding: 100px 8%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
