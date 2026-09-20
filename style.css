@@ -179,7 +179,6 @@ section {
 
     border: 1px solid #d8b8d8;
     border-radius: 0.8rem;
-
     transition: transform 0.2s ease,
                 box-shadow 0.2s ease;
 }
@@ -190,11 +189,44 @@ section {
     color: #6d28a8;
     font-weight: 600;
     text-decoration: none;
-
     border-bottom: 2px solid #c92f89;
     padding-bottom: 0.2rem;
 }
 
 .link-projeto:hover {
     color: #c92f89;
+}
+
+#contato {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.contato-titulo h2 {
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-bottom: 3rem;
+}
+
+.contato-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 4rem;
+}
+
+.contato-item h3 {
+    color: #6d28a8;
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+}
+
+.contato-item a {
+    color: #c92f89;
+    text-decoration: none;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.contato-item a:hover {
+    border-color: #c92f89;
 }
